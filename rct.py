@@ -20,8 +20,8 @@ GGE_GAME_WORLD = "EmpireEx_2"
 GGE_RECAPTCHA_V3_SITE_KEY = "6Lc7w34oAAAAAFKhfmln41m96VQm4MNqEdpCYm-k" 
 GGE_RECAPTCHA_ACTION = "submit"
 
-TEST_USERNAME = "user" # <<< REPLACE
-TEST_PASSWORD = "pw" # <<< REPLACE
+TEST_USERNAME = "Driftzz" # <<< REPLACE
+TEST_PASSWORD = "emilistcool12345" # <<< REPLACE
 TEST_BSO_COMMAND = f"%xt%{GGE_GAME_WORLD}%bso%1%{{\"OID\":1002017,\"AMT\":1,\"POID\":1002000}}%"
 
 # --- Logging ---
