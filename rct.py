@@ -38,25 +38,6 @@ def get_gge_recaptcha_token(quiet=False):
     logger.info("Versuche, einen GGE reCAPTCHA Token mit Selenium zu erhalten...")
     driver = None
     try:
-        options = webdriver.ChromeOptions()
-        options.add_argument("--window-size=800,600") 
-        # options.add_argument("--headless") 
-        options.add_argument("--disable-gpu")
-        options.add_argument("--no-sandbox") 
-        options.add_argument("--disable-dev-shm-usage") 
-        options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        options.add_experimental_option("useAutomationExtension", False)
-        options.add_argument('--disable-blink-features=AutomationControlled')
-        options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-
-        
-        try:
-            driver = webdriver.Chrome(options=options) 
-        except WebDriverException as e_init_driver:
-            logger.error(f"ChromeDriver konnte nicht initialisiert werden (automatische Erkennung): {e_init_driver}")
-            logger.error("Stellen Sie sicher, dass chromedriver.exe im PATH oder im Skriptverzeichnis ist und zur Chrome-Version passt.")
-            return None
-        logger.info("ChromeDriver initialisiert.")
         
         driver.get(GGE_LOGIN_URL_FOR_RCT)
         wait = WebDriverWait(driver, 45, poll_frequency=0.1) 
