@@ -24,10 +24,6 @@ TEST_USERNAME = "user" # <<< REPLACE
 TEST_PASSWORD = "pw" # <<< REPLACE
 TEST_BSO_COMMAND = f"%xt%{GGE_GAME_WORLD}%bso%1%{{\"OID\":1002017,\"AMT\":1,\"POID\":1002000}}%"
 
-# --- Logging ---
-logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] (%(funcName)s) %(message)s')
-logger = logging.getLogger("GGETestRCT")
-
 # --- Selenium Function to Get reCAPTCHA Token ---
 # --- Logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] (%(funcName)s) %(message)s')
